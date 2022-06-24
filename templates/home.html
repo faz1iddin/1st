@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for new in object_list %}
+        <div>
+            <h2>
+                <a href="{% url 'home_detail' new.pk %}">{{ new.title }}</a>
+            </h2>
+            <p>{{ new.text | slice:':100'}}...</p>
+        </div>
+        
+    {% endfor %}
+        
+
+{% endblock content %}
+
+
+
+

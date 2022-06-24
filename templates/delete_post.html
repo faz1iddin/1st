@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{%  block content %}
+
+    <h1>{{ news.title }}</h1>
+    <form action="" method="post">{% csrf_token %}
+        <p>rostanam ocirasanmi</p>
+        <button type="submit" value="delete">
+            submit
+        </button>
+       
+    </form>
+
+{% endblock content %}
